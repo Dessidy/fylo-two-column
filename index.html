@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { 
+      font-size: 14px; 
+    }
+
+    .attribution a { 
+      color: hsl(170, 45%, 43%);
+      
+      &:hover {
+        text-decoration: 2px underline currentColor;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="fylo_container">
+    <header class="fylo_heading">
+      <figure class="fylo_img_container">
+        <img src="./assets/logo.svg" alt="Fylo Logo">
+      </figure>
+      
+      <nav class="nav">
+        <ul class="nav_list_holder">
+          <li class="nav_list">
+            <a href="#" class="nav_link">Features</a>
+          </li>
+
+          <li class="nav_list">
+            <a href="#" class="nav_link">Team</a>
+          </li>
+
+          <li class="nav_list">
+            <a href="#" class="nav_link">Sign In</a>
+          </li>
+
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- ============================================================================== -->
+
+    <section class="fylo_sections file_section">
+        <main class="content_holder file_content">
+          <article class="content">
+            <h1 class="file_title">
+              All your files in one secure location, accessible anywhere.
+            </h1>
+            
+            <p class="review">
+              Fylo stores your most important files in one secure location. 
+              Access them wherever you need, share and collaborate with friends, 
+              family, and co-workers.
+            </p>
+          </article>
+          
+          <div class="form_btn_holder">
+            <div action="#" class="form">
+              <input type="email" class="email" placeholder="Enter your email..." required>
+              <span class="error-message">Please fill out this form.</span>
+            </div>
+            
+            <a href="#" class="btn"> Get Started</a>         
+          </div>
+        </main>
+
+        <aside class="img_aside">
+          <figure class="section_img_container">
+            <img src="./assets/illustration-1.svg" alt="illustration" class="file_img">
+          </figure>
+        </aside>
+    </section>
+
+    <!-- ============================================================================ -->
+    
+    <section class="fylo_sections productive_section">
+      <picture>
+        <source class="desktop_image" 
+        srcset="./assets/bg-curve-desktop.svg"
+        media="(min-width: 700px)">
+
+        <img src="./assets/bg-curve-mobile.svg" alt="" class="bg_image" style="z-index: 1;">
+      </picture>
+
+      <div class="pd_section_main">
+        
+        <main class="content_holder productive_content">
+          <article class="content">
+            <h2 class="pd_title">
+              Stay productive, wherever you are
+            </h2>
+
+            <p class="pd_review">
+              Never let location be an issue when accessing your files. Fylo has you 
+              covered for all of your file storage needs.
+            </p>
+
+            <p class="pd_review">
+              Securely share files and folders with friends, family and colleagues for 
+              live collaboration. No email attachments required!
+            </p>
+
+          </article>
+          
+          <div class="pd_link_container">
+            <div class="pd_link_sub_container">
+              <a href="#" class="pd_link"> See how Fylo works</a>
+              
+              <div class="pd_link_img_container">
+                <img src="./assets/icon-arrow.svg" alt="Arrow" class="pd_link_img">
+              </div>
+            </div>
+          </div>
+          
+          <div class="sub_content_container">
+            <article class="sub_content">
+              <div class="quote_img">
+                <img src="./assets/icon-quotes.svg" alt="Qoutes" class="quote">
+              </div>
+              
+              <p class="sub_review">
+                Fylo has improved our team productivity by an order of magnitude. Since 
+                making the switch our team has become a well-oiled collaboration machine.
+              </p>
+  
+              <div class="sub_comment_flex">
+                <figure class="kyle_img_container">
+                  <img src="./assets/avatar-testimonial.jpg" alt="Kyle" class="kyle_img">
+                </figure>
+  
+                <aside class="about_kyle">
+                  <h3 class="kyle_name">
+                    Kyle Burton
+                  </h3>
+  
+                  <p class="kyle_status">
+                    Founder & CEO, Huddle
+                  </p>
+                </aside>
+              </div>
+            </article>
+          </div>
+        </main>
+
+        <aside class="img_aside">
+          <figure class="section_img_container">
+            <img src="./assets/illustration-2.svg" alt="illustration" class="productive_img">
+          </figure>
+        </aside>
+      </div>
+      </section>
+
+    <!-- ================================================================================ -->
+
+    <section class="fylo_sections access_section">
+      <main class="content_holder access_content">
+        <article class="content">
+          <h2 class="title access_title">
+            Get early access today
+          </h2>
+          
+          <p class="review">
+            It only takes a minute to sign up and our free starter tier is extremely generous. 
+            If you have any questions, our support team would be happy to help you.
+          </p>
+        </article>
+      </main>
+      
+      <aside class="form_btn_holder">
+          <form action="#" class="form">
+            <input type="email" class="email" placeholder="Enter your email..." required>
+            <span class="error-message">Please fill out this form.</span>
+          </form>
+          
+            <a href="" class="btn"> Get Started</a>
+      </aside>
+    </section>
+    
+    <!-- ==================================================================================== -->
+    
+    <footer class="fylo_footer">
+      <header class="footer_header">
+        <figure class="footer_img">
+          <img src="./assets/logo 2.0.svg" alt="Fylo Logo" class="footer_fylo">
+        </figure>
+      </header>
+
+      <section class="contact_us_section"> <!-- ctn = container-->
+        <div class="contact">
+          <div class="ctn">
+            <figure class="contact_img">
+              <img src="./assets/icon-phone.svg" alt="phone">
+            </figure>
+            
+            <p class="inf0">Phone: +1-543-123-4567</p>
+          </div>
+
+          <div class="ctn">
+            <figure class="contact_img">
+              <img src="./assets/icon-email.svg" alt="Email">
+            </figure>
+
+            <p class="inf0">example@fylo.com</p>
+          </div>
+
+          <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          </p>
+
+          <p class="attribution">
+            Coded by <a href="https://www.frontendmentor.io/profile/Dessidy">Desmond Cassidy</a>.
+          </p>
+        </div>
+
+        <div class="inquiry_container">
+          <ul class="inquiry">
+            <li class="inquiry_list">
+              <a href="" class="inq_link">    
+                About Us
+              </a>
+            </li>
+            <li class="inquiry_list"> 
+              <a href="" class="inq_link">    
+                Jobs
+              </a>
+            </li>
+            <li class="inquiry_list">
+              <a href="" class="inq_link">    
+                Press
+              </a>
+            </li>
+            <li class="inquiry_list">
+              <a href="" class="inq_link">    
+                Blog
+              </a>
+            </li>
+          </ul>
+
+          <ul class="inquiry">
+            <li class="inquiry_list">
+              <a href="" class="inq_link">
+                Contact Us
+              </a>
+            </li>
+            <li class="inquiry_list">
+              <a href="" class="inq_link">
+                Terms
+              </a>
+            </li>
+            <li class="inquiry_list">
+              <a href="" class="inq_link">
+                Privacy
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social_icon">
+          <a href="" class="social_link">
+            <i class="fa-brands fa-facebook-f fa"></i>
+          </a>
+          <a href="" class="social_link">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="" class="social_link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </section>
+    </footer>
+  </div>
+</body>
+</html>
